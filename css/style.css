@@ -304,6 +304,15 @@ hr {
     font-size: 1.0em;
 }
 
+#confirmacao {
+    display: none;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em 0.5em;
+    border-radius: 2em;
+    margin: -8em 1em 0 1em;
+}
+
 @media (max-width: 768px) {
     #contato {
         padding: 2em 2em;
@@ -342,4 +351,23 @@ footer p {
         padding: 0 4em;
         padding-bottom: 2em;
     }
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+.fade-in-element {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.fade-in-element.visible {
+    animation: fadeIn 2s ease-out forwards;
 }
