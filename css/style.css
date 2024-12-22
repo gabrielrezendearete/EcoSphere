@@ -44,6 +44,11 @@ hr {
 }
 
 @media (max-width: 768px) {
+    body {
+        background: url("../images/background2.png");
+        background-attachment: scroll;
+    }
+
     h1 {
         font-size: 4em;
     }
@@ -51,6 +56,23 @@ hr {
     button {
         font-size: 1.2em;
     }
+}
+
+/* Galerias */
+.galeria {
+    margin: 4em 2em;
+    display: flex;
+    flex-direction: row;
+}
+
+.galeria .imagem, .galeria .conteudo {
+    flex: 1;
+}
+
+.galeria .conteudo {
+    padding: 4em;
+    text-align: center;
+    align-self: center;
 }
 
 /* Hero */
@@ -88,7 +110,7 @@ hr {
 
 /* Sobre */
 #sobre {
-    padding: 2em 4em;
+    padding: 4em;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -97,7 +119,7 @@ hr {
 
 #sobre .conteudo, #sobre .topicos {
     flex: 1;
-    padding: 6em;
+    padding: 0 6em;
 }
 
 #sobre h1 {
@@ -143,7 +165,7 @@ hr {
 
 /* Serviços */
 #servicos {
-    padding: 2em 0;
+    padding: 4em;
 }
 
 #servicos h1 {
@@ -198,7 +220,7 @@ hr {
 
 /* Contato */
 #contato {
-    padding: 2em 4em;
+    padding: 4em;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -216,7 +238,7 @@ hr {
 
 #contato .conteudo, #contato form {
     flex: 1;
-    padding: 6em;
+    padding: 0 6em;
 }
 
 #contato .conteudo {
@@ -254,6 +276,8 @@ hr {
 
 #contato button {
     margin-top: 1em;
+    padding: 0.8em 1.2em;
+    font-size: 1.0em;
 }
 
 @media (max-width: 768px) {
