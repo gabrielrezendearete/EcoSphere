@@ -75,6 +75,12 @@ hr {
     align-self: center;
 }
 
+@media (max-width: 768px) {
+    .galeria {
+        display: none;
+    }
+}
+
 /* Hero */
 #hero {
     padding: 8em 0;
@@ -95,11 +101,13 @@ hr {
 
 @media (max-width: 768px) {
     #hero {
-        padding: 8em 2em;
+        height: 100vh;
+        align-content: center;
+        padding: 0 2em;
     }
 
     #hero img {
-        width: 75%;
+        width: 100%;
         text-align: center;
     }
 
@@ -158,6 +166,14 @@ hr {
         flex-direction: column;
     }
 
+    #sobre h1 {
+        font-size: 2.5em;
+    }
+
+    #sobre p {
+        font-size: 1.2em;
+    }
+
     #sobre .conteudo, #sobre .topicos {
         padding: 2em;
     }
@@ -204,8 +220,16 @@ hr {
 }
 
 @media (max-width: 768px) {
+    #servicos {
+        padding: 2em 2em;
+    }
+
+    #servicos h1 {
+        font-size: 2.5em;
+    }
+
     #servicos .topicos {
-        padding: 2em;
+        padding: 1em;
         flex-direction: column;
     }
 
@@ -282,8 +306,16 @@ hr {
 
 @media (max-width: 768px) {
     #contato {
-        padding: 0 2em;
+        padding: 2em 2em;
         flex-direction: column;
+    }
+    
+    #contato h1 {
+        font-size: 2.2em;
+    }
+
+    #contato p {
+        font-size: 1.2em;
     }
 
     #contato .conteudo, #contato form {
@@ -291,7 +323,7 @@ hr {
     }
 
     #contato form {
-        width: 75%;
+        width: 100%;
         margin-bottom: 2em;
     }
 }
